@@ -11,7 +11,9 @@ You can build the webapp with the command
     mvn clean package
 
 ## Deploying the webapp to Tomcat
-You can set the CATALINA_HOME environment variable to the location of Tomcat. The contents of $CATALINA_HOME should look like this:
+You can set the CATALINA_HOME environment variable to the location of Tomcat. 
+
+The contents of $CATALINA_HOME should look like this:
 
     % ls $CATALINA_HOME
     BUILDING.txt	CONTRIBUTING.md	bin		conf		lib		logs		temp		webapps		work
