@@ -37,4 +37,17 @@ You can stop Tomcat by navigating to $CATALINA_HOME and running the command:
 ## Running and using the webapp
 After starting Tomcat, point your browser to http://localhost:8080/HelloTomcat and you'll see the index page. 
 
-You can also point your browser to http://localhost:8080/HelloTomcat/hello and you'll see the response by the servlet.
+You can also point your browser to http://localhost:8080/HelloTomcat/hello and see the response by the servlet.
+
+## Notes on Tomcat
+Tomcat requires zero configuration. You just run bin/startup.sh and drop your war file in the webapps folder. 
+
+You can get more functionality from Tomcat by creating an admin or manager user. 
+
+At the end of the file $CATALINA_HOME/conf/tomcat-users.xml, you can add the line
+
+    <user username="tomcat" password="yourpassword" roles="manager-gui,admin-gui"/>
+
+With Tomcat started, point your browser to http://localhost/manager. You can log in with the username "tomcat" and the password of your choice.
+
+In the manager GUI, you should be able to see and manage all of your webapps, including HelloTomcat.
