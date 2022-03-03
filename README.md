@@ -3,7 +3,7 @@
 ## Requirements
 1. Java 17
 2. Maven
-3. Apache Tomcat
+3. Apache Tomcat v10
 
 ## Building the webapp
 You can build the webapp with the command
